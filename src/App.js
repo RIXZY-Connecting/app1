@@ -1,7 +1,11 @@
 import React from 'react';
-import MassageBox from './state-func.js';
-
+import { userContext } from './context';
+import Content from './context-content';
 
 export default function App() {
-    return <MassageBox/>;
+    return (
+        <userContext.Provider value={'Tom and Jerry'}>
+            <Content/>
+        </userContext.Provider>
+    )
 }   
