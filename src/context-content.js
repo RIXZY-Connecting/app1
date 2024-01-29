@@ -1,7 +1,7 @@
 import React from 'react'
 import { userContext } from './context.js'
 
-export default function Context(){
+export default function Content(){
     let user=React.useContext(userContext)
     
     const contentStyle = {
