@@ -29,7 +29,7 @@ export default function Router3(){
             <Route path="/products" element={<Products/>}/>
             <Route path="/member" Component={Member}/>
             <Route path="/contact" element={<div style={{textAlign:'center'}}>Contect Page</div>}/>
-            <Route path="/*" element={<Products/>}/>
+            <Route path="/*" element={<div style={{textAlign:'center'}}>Error 404</div>}/>
         </Routes>
         </BrowserRouter>
     )
