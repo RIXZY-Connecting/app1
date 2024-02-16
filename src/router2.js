@@ -17,7 +17,7 @@ export default function Router3(){
                     fontWeight:isActive?"bold":""
                 };
             }}>Home</NavLink>-&nbsp;
-        <NavLink to='/product' className={({isActive})=>isActive?"active_menu":"menu"}>
+        <NavLink to='/products' className={({isActive})=>isActive?"active_menu":"menu"}>
             Product</NavLink> -&nbsp;
         <NavLink to='/member' className={({isActive})=>isActive?"active_menu":"menu"}>
             Member</NavLink> -&nbsp;
