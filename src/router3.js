@@ -5,7 +5,7 @@ import Products from './products'
 import Home from './home'
 import Member from './member'
 
-export default function Router2(){
+export default function Router3(){
     return(
         <BrowserRouter>
         <nav className="nav">
@@ -24,6 +24,13 @@ export default function Router2(){
         <NavLink to='/contact' className={({isActive})=>isActive?"active_menu":"menu"}>
             Contact</NavLink> 
         </nav>
+        <Routes style = {{margin:'20px'}}>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/products" element={<Products/>}/>
+            <Route path="/member" Component={Member}/>
+            <Route path="/contact" element={<div style={{textAlign:'center'}}>Contect Page</div>}/>
+            <Route path="/*" element={<div style={{textAlign:'center'}}>Error 404</div>}/>
+        </Routes>
         </BrowserRouter>
     )
 }
